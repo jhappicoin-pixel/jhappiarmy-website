@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>JhappiArmy 2.0 💞 — $JHAPPI</title>
+<meta name="description" content="JhappiArmy — Official $JHAPPI. No Rugs, Only Hugs. Join Telegram for airdrops & memes." />
+<meta property="og:title" content="JhappiArmy 💞 — $JHAPPI" />
+<meta property="og:description" content="No Rugs, Only Hugs — community-first meme token on Solana." />
+<meta property="og:image" content="assets/logo.png" />
+<style>
+  :root{--pink:#ff6b9a;--yellow:#ffd86b;--bg1:#fff7fb;--bg2:#fffef0;--card:#ffffffcc}
+  body{margin:0;font-family:Inter, system-ui, Arial,sans-serif;background:linear-gradient(180deg,var(--bg1),var(--bg2));color:#111827}
+  .wrap{max-width:980px;margin:0 auto;padding:22px}
+  header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo img{width:72px;height:72px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.09);object-fit:cover}
+  h1{margin:0;font-size:20px}
+  .hero{display:flex;gap:20px;align-items:center;margin-top:20px;flex-wrap:wrap}
+  .left{flex:1;min-width:260px}
+  .right{width:300px;min-width:260px;display:flex;align-items:center;justify-content:center}
+  .btn{display:inline-block;padding:10px 16px;border-radius:12px;font-weight:700;text-decoration:none}
+  .btn-join{background:linear-gradient(90deg,var(--pink),#ff8fb3);color:white;box-shadow:0 12px 40px rgba(255,107,154,0.18)}
+  .btn-ghost{border:2px solid #ffdce8;color:var(--pink);background:transparent}
+  .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 10px 30px rgba(15,23,42,0.04);margin-top:18px}
+  .counter{font-size:36px;font-weight:800;color:var(--pink);margin-top:8px}
+  .hugs{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+  .hug{position:absolute;width:120px;height:120px;opacity:0.12;filter:blur(0.5px);animation:float 12s linear infinite}
+  .hug img{width:100%;height:100%}
+  @keyframes float{
+    0%{transform:translateY(110vh) rotate(0deg);opacity:0}
+    10%{opacity:0.12}
+    50%{opacity:0.2}
+    100%{transform:translateY(-30vh) rotate(360deg);opacity:0}
+  }
+  @media(max-width:700px){.hero{flex-direction:column-reverse}.right{width:100%}}
+  .ticker{display:inline-block;padding:6px 10px;background:#fff3f8;color:#be185d;border-radius:999px;font-weight:700}
+</style>
+</head>
+<body>
+<div class="hugs" aria-hidden="true">
+  <div class="hug" style="left:5%;animation-delay:0s"><img src="assets/logo.png" alt="jhappi"/></div>
+  <div class="hug" style="left:25%;width:160px;height:160px;animation-delay:2s"><img src="assets/logo.png" alt="jhappi"/></div>
+  <div class="hug" style="left:50%;width:140px;height:140px;animation-delay:4s"><img src="assets/logo.png" alt="jhappi"/></div>
+  <div class="hug" style="left:75%;width:100px;height:100px;animation-delay:6s"><img src="assets/logo.png" alt="jhappi"/></div>
+</div>
+
+<div class="wrap">
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Jhappi Logo" onerror="this.style.display='none'"/>
+      <div>
+        <h1>JhappiArmy 💞</h1>
+        <div style="color:#6b7280;font-size:13px">Official $JHAPPI — Crypto ki Jhappi</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:12px;align-items:center">
+      <div class="ticker">No Rugs, Only Hugs</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="left">
+        <h2 style="font-size:34px;margin:0 0 8px">Crypto ki Jhappi 🤗 <br><span style="color:var(--pink)">$JHAPPI</span></h2>
+        <p style="color:#374151">Community-driven meme token on Solana — spreading good vibes and jokes. Join our Telegram for airdrops & meme contests.</p>
+
+        <div style="margin-top:12px">
+          <a class="btn btn-join" id="joinBtn" href="https://t.me/JHAPPIARMY" target="_blank">Join Telegram</a>
+          <a class="btn btn-ghost" href="https://x.com/JHAPPIARMY" target="_blank">Follow on X</a>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+            <div>
+              <div style="color:#6b7280;font-size:13px">JhappiArmy Members</div>
+              <div class="counter" id="memberCount">0</div>
+              <div style="color:#6b7280;font-size:13px">Join the hug movement — get early airdrops!</div>
+            </div>
+            <div style="text-align:right">
+              <div style="font-weight:700;color:#111827">Live Status</div>
+              <div style="color:#6b7280">Mint ready • Liquidity planned</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div style="width:280px;height:280px;border-radius:20px;background:linear-gradient(135deg,#fff0f6,#fffbe6);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,0.08)">
+          <img src="assets/logo.png" alt="jhappi" style="width:160px;height:160px;border-radius:20px;object-fit:cover"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h3 style="margin:0 0 8px">Roadmap — Quick</h3>
+      <div style="color:#374151">
+        <strong>Phase 1:</strong> Token mint + Logo + Community setup<br>
+        <strong>Phase 2:</strong> Liquidity + Airdrops + Meme contests<br>
+        <strong>Phase 3:</strong> Listings & Partnerships
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:18px;text-align:center">
+      <h3 style="margin:0 0 8px">Airdrop Countdown</h3>
+      <div id="countdown" style="font-size:28px;font-weight:800;color:var(--yellow)"></div>
+      <div style="color:#6b7280;font-size:13px;margin-top:8px">Be in the Telegram to qualify for early Jhappi drops!</div>
+    </section>
+
+  </main>
+
+  <footer style="text-align:center;color:#6b7280;margin:28px 0 60px">© 2025 JhappiArmy • Community project — not financial advice</footer>
+</div>
+
+<script>
+(function(){
+  const el = document.getElementById('memberCount');
+  let base = parseInt(localStorage.getItem('jhappi_base') || '120');
+  base = base + Math.floor(Math.random()*8);
+  function update() {
+    base += Math.floor(Math.random()*4);
+    el.textContent = base.toLocaleString('en-IN');
+    localStorage.setItem('jhappi_base', base);
+  }
+  update();
+  setInterval(update, 4000);
+
+  const countdownEl = document.getElementById('countdown');
+  const target = new Date(Date.now() + 7*24*60*60*1000);
+  function tick(){
+    const now = new Date();
+    let diff = Math.max(0, target - now);
+    const d = Math.floor(diff / (1000*60*60*24));
+    diff -= d*1000*60*60*24;
+    const h = String(Math.floor(diff/(1000*60*60))).padStart(2,'0');
+    diff -= h*1000*60*60;
+    const m = String(Math.floor(diff/(1000*60))).padStart(2,'0');
+    diff -= m*1000*60;
+    const s = String(Math.floor(diff/1000)).padStart(2,'0');
+    countdownEl.textContent = d + 'd ' + h + ':' + m + ':' + s;
+  }
+  tick();
+  setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
