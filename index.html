@@ -1,51 +1,139 @@
 <!doctype html>
 <html lang="hi">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>JhappiArmy 💞 — Official $JHAPPI</title>
-<style>
-body { font-family: Arial; margin:0; background: linear-gradient(to bottom,#fff7fb,#fffef0); color:#111; }
-.container { max-width:980px; margin:auto; padding:20px; }
-header { display:flex; align-items:center; justify-content:space-between; gap:10px; }
-.btn { display:inline-block; padding:10px 16px; border-radius:10px; text-decoration:none; font-weight:700; margin-top:10px;}
-.btn-yellow { background:#ffd86b; color:#111; box-shadow:0 6px 18px rgba(255,184,107,.3);}
-.btn-outline { border:2px solid #f9c0d3; color:#e11d48; background:transparent;}
-.card { background:rgba(255,255,255,0.8); padding:14px; border-radius:10px; margin-top:12px;}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JhappiArmy 💞 — Official $JHAPPI</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin:0; background: linear-gradient(to bottom, #fff7fb, #fffef0); color:#1f2937; }
+    .container { max-width:980px; margin:0 auto; padding:20px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 0; }
+    .logo { display:flex; align-items:center; gap:12px; }
+    .coin { width:64px; height:64px; border-radius:50%; background:linear-gradient(135deg,#ffd86b,#ffb86b); display:flex; align-items:center; justify-content:center; box-shadow:0 6px 18px rgba(0,0,0,0.12); }
+    h1 { margin:0; font-size:20px; }
+    p.lead { margin:6px 0 0; color:#6b7280; font-size:13px; }
+    .hero { display:flex; gap:20px; align-items:center; margin-top:18px; flex-wrap:wrap; }
+    .hero-left { flex:1; min-width:260px; }
+    .hero-right { width:300px; min-width:260px; display:flex; align-items:center; justify-content:center; }
+    .btn { display:inline-block; padding:10px 16px; border-radius:10px; text-decoration:none; font-weight:700; }
+    .btn-yellow { background:#ffd86b; color:#111827; }
+    .btn-outline { border:2px solid #f9c0d3; color:#e11d48; background:transparent; }
+    section.card { background:rgba(255,255,255,0.85); padding:16px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); margin-top:18px; }
+    ul { padding-left:18px; }
+    footer { text-align:center; color:#6b7280; font-size:13px; margin:28px 0 60px; }
+    .tag { display:inline-block; background:#fff3f8; color:#be185d; padding:6px 10px; border-radius:999px; font-weight:700; }
+    @media(max-width:700px){
+      .hero { flex-direction:column-reverse; }
+      .hero-right { width:100%; }
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-<header>
-<h1>JhappiArmy 💞</h1>
-<nav><a href="#join">Join</a></nav>
-</header>
-<h2>Crypto ki Jhappi 🤗 — $JHAPPI</h2>
-<p>No Rugs, Only Hugs 💖<br/>A Meme Coin spreading love on Solana 🇮🇳</p>
-<a class="btn btn-yellow" href="https://t.me/JHAPPIARMY">Join Telegram</a>
-<a class="btn btn-outline" href="https://x.com/JHAPPIARMY">Follow on X</a>
-<section class="card" id="about">
-<h3>About $JHAPPI</h3>
-<p>$JHAPPI aims to build a community of positivity — spreading love, memes, and happiness!</p>
-</section>
-<section class="card" id="tokenomics">
-<h3>Tokenomics</h3>
-<ul>
-<li>50% — Community & Airdrops</li>
-<li>25% — Liquidity</li>
-<li>15% — Team</li>
-<li>10% — Marketing</li>
-</ul>
-</section>
-<section class="card" id="join" style="text-align:center;">
-<h3>Join the JhappiArmy</h3>
-<p>Join करो हमारे Telegram और X पर — जल्दी से airdrops और meme contests के लिए जुड़ जाओ!</p>
-<a class="btn btn-yellow" href="https://t.me/JHAPPIARMY">Join Telegram</a>
-<a class="btn btn-outline" href="https://x.com/JHAPPIARMY">Follow on X</a>
-</section>
-<footer style="text-align:center;margin-top:20px;color:#555;">
-<p>© 2025 JhappiArmy • No Rugs, Only Hugs 🤗</p>
-</footer>
-</div>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="coin" id="logo-img">🤗</div>
+        <div>
+          <h1>JhappiArmy <span style="color:#ec4899">💞</span></h1>
+          <p class="lead">Official $JHAPPI — Crypto ki Jhappi</p>
+        </div>
+      </div>
+      <nav>
+        <a class="tag" href="#join">Join</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="hero-left">
+          <h2 style="font-size:34px; margin:0 0 8px;">Crypto ki Jhappi 🤗<br><span style="color:#ef4444">$JHAPPI</span></h2>
+          <p style="color:#374151">No FUD, Only Hugs — एक मज़ेदार और community-driven meme token जो Solana पर बनेगा।</p>
+          <div style="margin-top:12px;">
+            <a class="btn btn-yellow" href="https://t.me/JHAPPIARMY" target="_blank">Join Telegram</a>
+            <a class="btn btn-outline" href="https://x.com/JHAPPIARMY" target="_blank">Follow on X</a>
+          </div>
+          <p style="color:#6b7280; margin-top:10px;">Live status: Token mint ready • Liquidity planned • Community-first launch</p>
+        </div>
+        <div class="hero-right">
+          <div style="width:220px; height:220px; border-radius:20px; background:linear-gradient(135deg,#fff0f6,#fffbe6); display:flex; align-items:center; justify-content:center; box-shadow:0 10px 30px rgba(0,0,0,0.08);">
+            <div style="text-align:center;">
+              <div style="font-size:88px; line-height:1;">🤗</div>
+              <div style="font-weight:700; color:#ef4444; margin-top:6px;">No Rugs, Only Hugs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="about" class="card">
+        <h3>JhappiCoin क्या है?</h3>
+        <p>$JHAPPI एक community-first meme token है जिसका मक़सद crypto में positivity फैलाना — मज़ाक, memes और एक supportive community.</p>
+        <div style="display:flex; gap:12px; margin-top:12px; flex-wrap:wrap;">
+          <div style="flex:1; min-width:160px; background:#fff; padding:10px; border-radius:10px;">
+            <strong>Network</strong>
+            <div style="color:#6b7280; font-size:13px;">Solana — तेज़ और सस्ता</div>
+          </div>
+          <div style="flex:1; min-width:160px; background:#fff; padding:10px; border-radius:10px;">
+            <strong>Total Supply</strong>
+            <div style="color:#6b7280; font-size:13px;">1,000,000,000 JHAPPI</div>
+          </div>
+          <div style="flex:1; min-width:160px; background:#fff; padding:10px; border-radius:10px;">
+            <strong>Decimals</strong>
+            <div style="color:#6b7280; font-size:13px;">9</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tokenomics" class="card">
+        <h3>Tokenomics — आसान भाषा</h3>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <div style="flex:1; min-width:220px;">
+            <ul>
+              <li><strong>50%</strong> — Community & Airdrops</li>
+              <li><strong>25%</strong> — Liquidity</li>
+              <li><strong>15%</strong> — Team (locked)</li>
+              <li><strong>10%</strong> — Marketing & Partnerships</li>
+            </ul>
+          </div>
+          <div style="flex:1; min-width:220px;">
+            <strong>Launch Plan</strong>
+            <ol style="padding-left:18px; color:#6b7280;">
+              <li>Devnet पर टेस्ट</li>
+              <li>Mainnet पर mint</li>
+              <li>Raydium पर liquidity जोड़ें</li>
+              <li>Community airdrops & contests</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="card">
+        <h3>Roadmap</h3>
+        <div style="display:flex; gap:12px; flex-direction:column;">
+          <div style="background:#fff; padding:10px; border-radius:10px;">
+            <strong>Phase 1</strong> — Token बनाना + Logo + Community setup
+          </div>
+          <div style="background:#fff; padding:10px; border-radius:10px;">
+            <strong>Phase 2</strong> — Liquidity + Airdrops + Meme contests
+          </div>
+          <div style="background:#fff; padding:10px; border-radius:10px;">
+            <strong>Phase 3</strong> — Listings & Partnerships
+          </div>
+        </div>
+      </section>
+
+      <section id="join" class="card" style="text-align:center;">
+        <h3>Join the JhappiArmy</h3>
+        <p>Join करो हमारे Telegram और X पर — जल्दी से airdrops और meme contests के लिए जुड़ जाओ!</p>
+        <div style="margin-top:12px;">
+          <a class="btn btn-yellow" href="https://t.me/JHAPPIARMY" target="_blank">Join Telegram</a>
+          <a class="btn btn-outline" href="https://x.com/JHAPPIARMY" target="_blank">Follow on X</a>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2025 JhappiArmy • यह सिर्फ़ एक community project है — financial advice नहीं।</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
