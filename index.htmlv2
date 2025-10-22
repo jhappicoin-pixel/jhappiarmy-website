@@ -1,0 +1,325 @@
+<!doctype html>
+
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JhappiArmy 💞 — $JHAPPI | No Rugs, Only Hugs</title>
+  <meta name="description" content="JhappiArmy — Official $JHAPPI meme token. No Rugs, Only Hugs. Hug‑to‑Earn, airdrops, contests & community love on Solana." />
+  <meta name="theme-color" content="#ff6b9a" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" as="style" onload="this.rel='stylesheet'">
+  <style>
+    :root{
+      --pink:#ff6b9a;--pink2:#ff8fb3;--ink:#111827;--muted:#6b7280;--card:rgba(255,255,255,.94);
+      --bg1:#fff7fb;--bg2:#fffef0;--ring:rgba(255,107,154,.25)
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);
+      background:linear-gradient(180deg,var(--bg1),var(--bg2));}
+    .wrap{max-width:1060px;margin:0 auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;position:sticky;top:0;background:linear-gradient(180deg,rgba(255,247,251,.85),rgba(255,254,240,.85));backdrop-filter:blur(8px);z-index:20;border-bottom:1px solid rgba(0,0,0,.04)}
+    .brand{display:flex;align-items:center;gap:12px;padding:10px 0}
+    .logo{width:56px;height:56px;border-radius:14px;object-fit:cover;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+    h1{font-size:18px;margin:0}
+    .tag{color:var(--muted);font-size:12px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;font-weight:800;text-decoration:none;border:2px solid transparent;transition:.2s}
+    .btn-primary{background:linear-gradient(90deg,var(--pink),var(--pink2));color:#fff;box-shadow:0 10px 24px rgba(255,107,154,.35)}
+    .btn-ghost{border-color:#ffdce8;color:#e11d48;background:transparent}
+    .grid{display:grid;gap:18px}
+    .hero{grid-template-columns:1.2fr .8fr;align-items:center;margin-top:16px}
+    .card{background:var(--card);border-radius:16px;padding:16px;box-shadow:0 14px 40px rgba(2,6,23,.06)}
+    .headline{font-size:34px;line-height:1.05;margin:0 0 8px}
+    .sub{color:#374151;margin:0 0 12px}
+    .pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #ffe4ee;color:#e11d48;border-radius:999px;padding:6px 10px;font-weight:700;font-size:12px}
+    .hero-art{height:320px;border-radius:20px;background:radial-gradient(120px 120px at 25% 25%,#fff0f6,transparent),linear-gradient(135deg,#fff0f6,#fffbe6);display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 14px 40px rgba(0,0,0,.08)}
+    .hero-art img{width:170px;height:170px;border-radius:22px;object-fit:cover}.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.kpi{background:#fff;border:1px solid #ffe4ee;border-radius:12px;padding:12px}
+.kpi .n{font-size:28px;font-weight:800;color:var(--pink)}
+
+.section h2{margin:0 0 8px;font-size:26px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.badge{background:#fff;border:1px solid #eee;border-radius:999px;padding:8px 12px;font-weight:700;font-size:12px}
+
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+
+.timeline{position:relative;padding-left:18px}
+.timeline::before{content:"";position:absolute;left:6px;top:4px;bottom:4px;width:2px;background:linear-gradient(var(--pink),transparent)}
+.tl-item{position:relative;margin:10px 0;padding-left:12px}
+.tl-item::before{content:"";position:absolute;left:-2px;top:6px;width:10px;height:10px;background:var(--pink);border-radius:50%;box-shadow:0 0 0 4px var(--ring)}
+.tl-item strong{display:block}
+
+.tokenomics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tok{background:#fff;border-radius:12px;border:1px solid #f5d0dc;padding:14px}
+.tok .big{font-size:22px;font-weight:800;color:var(--pink)}
+
+.faq details{background:#fff;border:1px solid #eee;border-radius:12px;padding:12px}
+.faq details+details{margin-top:10px}
+summary{cursor:pointer;font-weight:700}
+
+footer{color:var(--muted);text-align:center;margin:28px 0 80px}
+
+/* Floating hearts */
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:5}
+.heart{position:absolute;opacity:.85;animation:floatUp 6s linear forwards}
+@keyframes floatUp{from{transform:translateY(0) scale(.8)}to{transform:translateY(-120vh) scale(1.1);opacity:0}}
+
+/* Modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.35);display:none;align-items:center;justify-content:center;z-index:30}
+.modal .box{background:#fff;border-radius:16px;padding:18px;max-width:420px;width:92%;box-shadow:0 18px 60px rgba(0,0,0,.2)}
+.field{display:flex;gap:8px}
+.field input{flex:1;padding:12px;border-radius:12px;border:1px solid #eee;outline:none}
+
+/* Responsive */
+@media (max-width:900px){.grid.hero{grid-template-columns:1fr}.row{grid-template-columns:1fr}.tokenomics{grid-template-columns:1fr 1fr}.kpis{grid-template-columns:1fr 1fr 1fr}}
+@media (max-width:560px){.headline{font-size:28px}.tokenomics{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}.hero-art{height:260px}}
+
+  </style>
+  <!-- SEO / Social -->
+  <link rel="canonical" href="https://yourdomain/" />
+  <meta property="og:title" content="JhappiArmy 💞 — $JHAPPI" />
+  <meta property="og:description" content="No Rugs, Only Hugs. Join #JhappiArmy for memes, airdrops, and Hug‑to‑Earn on Solana." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://yourdomain/assets/banner.png" />
+  <meta property="og:url" content="https://yourdomain/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@JHAPPIARMY" />  <!-- Preload critical hero image -->  <link rel="preload" as="image" href="assets/banner.png" />  <!-- Icons (optional) -->  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />  <!-- JSON-LD -->  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "JhappiArmy",
+    "url": "https://yourdomain/",
+    "logo": "https://yourdomain/assets/logo.png",
+    "sameAs": [
+      "https://x.com/JHAPPIARMY",
+      "https://t.me/JHAPPIDO"
+    ],
+    "slogan": "No Rugs, Only Hugs"
+  }
+  </script></head>
+<body>
+  <div class="hearts" id="hearts"></div>
+  <header class="wrap">
+    <div class="brand">
+      <img src="assets/logo.png" loading="eager" decoding="async" alt="Jhappi" class="logo" onerror="this.src='https://placehold.co/160x160/ff6b9a/ffffff?text=JH'">
+      <div>
+        <h1>JhappiArmy 💞 — $JHAPPI</h1>
+        <div class="tag">Official Meme Token • <span class="pill">No Rugs, Only Hugs</span></div>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;padding:10px 0">
+      <a class="btn btn-primary" href="https://t.me/JHAPPIDO" target="_blank" rel="noopener">Join Telegram</a>
+      <a class="btn btn-ghost" href="https://x.com/JHAPPIARMY" target="_blank" rel="noopener">Follow on X</a>
+    </div>
+  </header>  <main class="wrap">
+    <!-- HERO -->
+    <section class="grid hero">
+      <div class="card">
+        <div class="pill">Crypto ki Jhappi 🤗</div>
+        <h2 class="headline">Hug‑to‑Earn on <span style="color:#ef4444">Solana</span></h2>
+        <p class="sub">$JHAPPI — एक community‑driven meme token जो प्यार, memes और good vibes से चलता है. 
+          Do good • Give Jhappi • Get rewarded.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 6px">
+          <button class="btn btn-primary" id="airdropBtn">🎁 Join Airdrop Waitlist</button>
+          <a class="btn btn-ghost" href="#roadmap">📅 View Roadmap</a>
+        </div>
+        <div class="kpis" style="margin-top:12px">
+          <div class="kpi"><div class="lbl">JhappiArmy</div><div class="n" id="k1">0</div><div class="s" style="color:var(--muted);font-size:12px">members</div></div>
+          <div class="kpi"><div class="lbl">Hugs Logged</div><div class="n" id="k2">0</div><div class="s" style="color:var(--muted);font-size:12px">since Day 1</div></div>
+          <div class="kpi"><div class="lbl">Airdrop Spots</div><div class="n" id="k3">0</div><div class="s" style="color:var(--muted);font-size:12px">phase‑1</div></div>
+        </div>
+        <div class="badges">
+          <span class="badge">Network: Solana</span>
+          <span class="badge">Supply: 1,000,000,000</span>
+          <span class="badge">Decimals: 9</span>
+          <span class="badge">Status: Devnet testing</span>
+        </div>
+      </div>
+      <div class="hero-art card">
+        <img src="assets/banner.png" loading="eager" decoding="async" alt="Jhappi hero" onerror="this.src='https://placehold.co/600x600/fef2f2/111827?text=Jhappi+Army'">
+        <!-- floating accents -->
+        <svg style="position:absolute;right:16px;top:16px" width="40" height="40" viewBox="0 0 24 24"><path fill="#ff6b9a" d="M12 21s-6.716-4.534-9.75-7.567C.216 11.4.216 8.2 2.25 6.167c1.6-1.6 4.2-1.6 5.8 0L12 10.117l3.95-3.95c1.6-1.6 4.2-1.6 5.8 0c2.034 2.033 2.034 5.233 0 7.266C18.716 16.466 12 21 12 21z"/></svg>
+      </div>
+    </section><!-- NEW TRENDING IDEA -->
+<section class="card section" id="trending">
+  <h2>🔥 New Trending Idea — <em>Snap‑a‑Jhappi</em> 📸</h2>
+  <p class="sub">हर रोज़ एक प्यारी सी झप्पी का फोटो/वीडियो पोस्ट करो — #JhappiArmy टैग के साथ. 
+    Top entries को मिलेंगे <strong>Hug‑to‑Earn</strong> points & airdrop spots. 
+    Proof‑of‑Hug = Proof‑of‑Humanity 💞</p>
+  <div class="row">
+    <div class="card" style="border:1px dashed #ffd6e5">
+      <strong>How it works</strong>
+      <ol>
+        <li>Real life या virtual झप्पी का पल कैद करो 🤗</li>
+        <li>Post on X/Telegram with <b>#JhappiArmy</b></li>
+        <li>Submit link in our bot → earn points</li>
+      </ol>
+      <div class="badges"><span class="badge">Weekly winners</span><span class="badge">Creator boosts</span><span class="badge">Airdrop multipliers</span></div>
+    </div>
+    <div class="card">
+      <strong>Why it trends</strong>
+      <ul>
+        <li>UGC + wholesome content = algorithm love</li>
+        <li>Simple action → high participation</li>
+        <li>Memes + emotions = shareability 💫</li>
+      </ul>
+      <a class="btn btn-primary" href="https://t.me/JHAPPIDO" target="_blank" rel="noopener">Join the contest</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / TOKENOMICS -->
+<section class="card section" id="about">
+  <h2>About $JHAPPI</h2>
+  <p class="sub">$JHAPPI एक community‑first meme token है — positivity, memes और supportive family के लिए. 
+    कोई financial advice नहीं. बस प्यार, fun और transparency.</p>
+  <div class="tokenomics">
+    <div class="tok"><div>Network</div><div class="big">Solana</div><div class="mini" style="color:var(--muted)">Fast • Low fees</div></div>
+    <div class="tok"><div>Total Supply</div><div class="big">1,000,000,000</div><div class="mini" style="color:var(--muted)">$JHAPPI</div></div>
+    <div class="tok"><div>Decimals</div><div class="big">9</div><div class="mini" style="color:var(--muted)">SPL Token</div></div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="card section" id="roadmap">
+  <h2>Roadmap 2025</h2>
+  <div class="timeline">
+    <div class="tl-item"><strong>Oct 2025</strong> Devnet testing, community launch, Snap‑a‑Jhappi contest</div>
+    <div class="tl-item"><strong>Nov 2025</strong> Token generation (SPL), liquidity bootstrapping, Airdrop‑Phase‑1</div>
+    <div class="tl-item"><strong>Dec 2025</strong> Listings on community DEX, Hug‑to‑Earn quests, Creator grants</div>
+    <div class="tl-item"><strong>Q1 2026</strong> Mobile mini‑app, on‑chain Proof‑of‑Hug & badges</div>
+  </div>
+  <div style="margin-top:10px" class="badges">
+    <span class="badge">Community‑first</span>
+    <span class="badge">Transparent</span>
+    <span class="badge">Fun‑forward</span>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="card section faq" id="faq">
+  <h2>FAQ</h2>
+  <details>
+    <summary>$JHAPPI कब आएगा?</summary>
+    <div>Target: <b>Nov 2025</b> SPL token on Solana (subject to testing & safety).</div>
+  </details>
+  <details>
+    <summary>Contract address?</summary>
+    <div><code id="contract">TBA after audit ✔️</code></div>
+  </details>
+  <details>
+    <summary>Is this financial advice?</summary>
+    <div>No. यह एक community meme project है — vibes only 💞</div>
+  </details>
+</section>
+
+<footer>
+  © 2025 JhappiArmy • Community project — No Rugs, Only Hugs • Be kind, spread hugs 🤗
+</footer>
+
+  </main>  <!-- AIRDROP MODAL -->  <div class="modal" id="airdropModal" aria-hidden="true">
+    <div class="box">
+      <h3 style="margin:0 0 8px">🎁 Airdrop Waitlist</h3>
+      <p class="sub">अपना Telegram username डालो — हम वहीं अपडेट देंगे.</p>
+      <div class="field">
+        <input id="tg" placeholder="@yourusername" />
+        <button class="btn btn-primary" id="saveLead">Join</button>
+      </div>
+      <p id="msg" style="color:var(--muted);font-size:12px;margin:10px 2px 0"></p>
+    </div>
+  </div>  <script>
+    // Simple counters with localStorage memory
+    (function(){
+      const k1 = document.getElementById('k1');
+      const k2 = document.getElementById('k2');
+      const k3 = document.getElementById('k3');
+      const st = JSON.parse(localStorage.getItem('jhappi_stats')||'{"m":120,"h":350,"s":500}')
+      function bump(){
+        st.m += Math.floor(Math.random()*5);
+        st.h += Math.floor(Math.random()*9);
+        st.s = 800; // fixed phase‑1 cap
+        k1.textContent = st.m.toLocaleString('en-IN');
+        k2.textContent = st.h.toLocaleString('en-IN');
+        k3.textContent = st.s.toLocaleString('en-IN');
+        localStorage.setItem('jhappi_stats', JSON.stringify(st));
+      }
+      bump();
+      setInterval(bump, 4000);
+    })();
+
+    // Floating hearts spawner
+    (function(){
+      const box = document.getElementById('hearts');
+      function spawn(){
+        const s = Math.random()*24+12; // size
+        const x = Math.random()*100;   // left%
+        const el = document.createElement('div');
+        el.className = 'heart';
+        el.style.left = x + 'vw';
+        el.style.bottom = '-40px';
+        el.style.fontSize = s + 'px';
+        el.textContent = '💞';
+        el.style.animationDuration = (Math.random()*3+4)+'s';
+        box.appendChild(el);
+        setTimeout(()=>el.remove(), 7000);
+      }
+      setInterval(spawn, 900);
+    })();
+
+    // Airdrop modal
+    (function(){
+      const open = document.getElementById('airdropBtn');
+      const modal = document.getElementById('airdropModal');
+      const save = document.getElementById('saveLead');
+      const msg = document.getElementById('msg');
+      const input = document.getElementById('tg');
+      open.addEventListener('click', ()=>{ modal.style.display='flex'; input.focus() })
+      modal.addEventListener('click', (e)=>{ if(e.target===modal) modal.style.display='none' })
+      save.addEventListener('click', ()=>{
+        const v = (input.value||'').trim();
+        if(!/^@?[a-zA-Z0-9_]{4,}$/.test(v)){ msg.textContent='Please enter a valid @username'; return }
+        const u = v.startsWith('@')?v:'@'+v;
+        const leads = JSON.parse(localStorage.getItem('jhappi_leads')||'[]');
+        if(!leads.includes(u)) leads.push(u);
+        localStorage.setItem('jhappi_leads', JSON.stringify(leads));
+        msg.textContent = 'Added '+u+' ✅ — we will announce on Telegram.';
+        input.value='';
+      })
+      window.addEventListener('keydown', (e)=>{ if(e.key==='Escape') modal.style.display='none' })
+    })();
+  </script></body>  <!--
+  =====================
+  Extra Files to add:
+  =====================
+  robots.txt
+  ---------------------
+  User-agent: *
+  Allow: /
+  Sitemap: https://yourdomain/sitemap.xml
+
+  sitemap.xml
+  ---------------------
+  <?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url><loc>https://yourdomain/</loc></url>
+    <url><loc>https://yourdomain/#about</loc></url>
+    <url><loc>https://yourdomain/#roadmap</loc></url>
+    <url><loc>https://yourdomain/#faq</loc></url>
+  </urlset>
+
+  Optional: Google Apps Script webhook (save airdrop leads to Google Sheet)
+  ---------------------
+  1) Create a new App Script, paste this, Deploy as web app (Anyone can access):
+
+  function doPost(e){
+    const ss = SpreadsheetApp.openById('YOUR_SHEET_ID');
+    const sh = ss.getSheetByName('Leads')||ss.insertSheet('Leads');
+    const data = JSON.parse(e.postData.contents||'{}');
+    sh.appendRow([new Date(), data.username]);
+    return ContentService.createTextOutput('ok').setMimeType(ContentService.MimeType.TEXT);
+  }
+
+  2) In index.html fetch:
+     fetch('YOUR_WEBAPP_URL',{method:'POST',body:JSON.stringify({username:u})})
+  --></html>
